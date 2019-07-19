@@ -8,7 +8,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="import rss/xml url here...">
                     <div class="input-group-append">
-                        <button class="btn btn-success" type="submit">Import</button>
+                        <button class="btn btn-success" type="submit"><i class="fas fa-file-import"></i>&nbsp;&nbsp;Import</button>
                     </div>
                 </div>
             </form> 
