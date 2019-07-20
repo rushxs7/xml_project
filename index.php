@@ -25,65 +25,51 @@
         </div>
         <div class="row">
 
-            <!-- <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-primary mb-4 shadow">
+                    <div class="card-header">Starnieuws</div>
                     <div class="card-body">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">
+                            <ul>
+                                <li>Headline 1</li>
+                                <li>Headline 2</li>
+                                <li>Headline 3</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
+            </div>            
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-primary mb-4 shadow">
+                    <div class="card-header">Starnieuws</div>
                     <div class="card-body">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">
+                            <ul>
+                                <li>Headline 1</li>
+                                <li>Headline 2</li>
+                                <li>Headline 3</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
+            </div>            
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-primary mb-4 shadow">
+                    <div class="card-header">Starnieuws</div>
                     <div class="card-body">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">
+                            <ul>
+                                <li>Headline 1</li>
+                                <li>Headline 2</li>
+                                <li>Headline 3</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div> -->
+            </div>            
             
         </div>
 
