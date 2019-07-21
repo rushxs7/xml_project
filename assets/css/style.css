@@ -4,3 +4,8 @@
 {
     color: #111;
 }
+
+.modal video{
+    width: 100%;
+    height: auto;
+}

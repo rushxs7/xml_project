@@ -11,13 +11,7 @@
                         <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Saved</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tutorial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">What is RSS?</a>
+                        <a class="nav-link" onclick="event.preventDefault();" href="#" data-toggle="modal" data-target="#tutorialModal">Tutorial</a>
                     </li>
                 </ul>
                 <div class="d-inline ml-auto">
@@ -47,6 +41,23 @@
                         </div>
                         <button type="submit" class="btn btn-sm btn-primary">Save</button>
                     </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tutorialModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Tutorial</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <video src="assets/videos/tutorial.mp4" controls></video>
                 </div>
 
             </div>
