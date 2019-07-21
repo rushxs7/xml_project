@@ -39,7 +39,7 @@
                             <label for="feedAmt">Amount of feeds to show per source: </label>
                             <input type="number" name="feedAmt" id="feedAmt" class="form-control form-control-sm" min="1" max="50" step="1" value="<?php echo($_SESSION['formax']); ?>">
                         </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Save</button>
+                        <button type="submit" class="btn btn-block btn-sm btn-primary">Save</button>
                     </form>
                 </div>
 
