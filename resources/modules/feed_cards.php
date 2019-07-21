@@ -9,7 +9,7 @@
     if (mysqli_num_rows($result) > 0){
         while($feed = mysqli_fetch_assoc($result)){
             echo('<div class="col-12">
-                    <div class="card border-primary mb-4 shadow">
+                    <div class="card border-secondary mb-4 shadow">
                         <div class="card-header"><a href="' . $feed['link'] . '" target="_blank">'. $feed['title'] . '</a>
                         <a class="close" href="delete.php?id=' . $feed['id'] . '"><i class="fas fa-trash"></i></a>
                         </div>
@@ -29,7 +29,7 @@
                             }
                             echo('</ul>');
                 if(count($xml->channel->item) > $_SESSION['formax']){
-                    echo('<a class="btn btn-sm btn-info float-right" href="detail.php?id=' . $feed['id'] . '">Read more...</a>');
+                    echo('<a class="btn btn-sm btn-outline-dark float-right" href="detail.php?id=' . $feed['id'] . '">Read more...</a>');
                 }
             }else{
                             echo('No feeds to display');
