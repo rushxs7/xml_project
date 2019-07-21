@@ -23,9 +23,32 @@
                 <div class="d-inline ml-auto">
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <button id="reloadButton" onclick="loadFeeds()" type="button" class="btn btn-outline-primary"><i class="fas fa-sync"></i></button>
-                        <button type="button" class="btn btn-primary"><i class="fas fa-list-ol"></i></button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changeFeedAmountModal"><i class="fas fa-list-ol"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="changeFeedAmountModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Change feed amount</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="app/change_feed_amt.php" method="POST" autocomplete="off">
+                        <div class="form-group">
+                            <label for="feedAmt">Amount of feeds to show per source: </label>
+                            <input type="number" name="feedAmt" id="feedAmt" class="form-control form-control-sm" min="1" max="50" step="1" value="<?php echo($_SESSION['formax']); ?>">
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-primary">Save</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
