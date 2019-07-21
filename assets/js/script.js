@@ -1,8 +1,14 @@
 function loadFeeds(){
     $("#feedContainer").empty();
+    $("#animator").show();
     $.get("resources/modules/feed_cards.php", function (data, status) {
         $("#feedContainer").html(data);
         console.log("Get data from feed_cards.php. Status: " + status);
+    }).done(function(){
+        $("#animator").fadeOut(500, function(){
+            $(this).hide();
+        });
+        $("animator").fadeIn(200);
     });
 }
 
@@ -12,6 +18,8 @@ $(document).ready(function(){
     setInterval(loadFeeds, 300000);
 
     $("#importButton").click(function(event){
+        $("#importIcon").hide();
+        $("#loadingIcon").show();
         var url = $("#importUrl").val();
         $("#importUrl").val(null);
         $.post("app/import_rss.php", {
@@ -25,7 +33,7 @@ $(document).ready(function(){
                     position: 'top-end',
                     timer: 3000,
                     showConfirmButton: false,
-                    title: 'Success!',
+                    title: 'Valid!',
                     text: jsonData.message,
                     type: 'success',
                     onClose: secondAlert,
@@ -33,7 +41,7 @@ $(document).ready(function(){
                 function secondAlert(){
                     if (jsonData.insertion) {
                         Swal.fire({
-                            timer: 3000,
+                            timer: 2000,
                             showConfirmButton: false,
                             title: 'Successful Import!',
                             text: jsonData.insertionMessage,
@@ -64,6 +72,9 @@ $(document).ready(function(){
                     type: 'error',
                 })
             }
+        }).done(function(){
+            $("#importIcon").show();
+            $("#loadingIcon").hide();
         });
     });
 
