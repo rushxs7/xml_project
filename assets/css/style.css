@@ -1,6 +1,9 @@
 .feedItem{
     /* font-size: 80%; */
 }
-.card a:link{
+.card a:link,
+.card a:visited,
+.card a:hover
+{
     color: #111;
 }
