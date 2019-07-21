@@ -1,3 +1,6 @@
 .feedItem{
-    font-size: 80%;
+    /* font-size: 80%; */
+}
+.card a:link{
+    color: #111;
 }
