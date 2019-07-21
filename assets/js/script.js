@@ -9,7 +9,7 @@ function loadFeeds(){
 $(document).ready(function(){
     
     loadFeeds();
-    // setInterval(loadFeeds, 10000);
+    setInterval(loadFeeds, 300000);
 
     $("#importButton").click(function(event){
         var url = $("#importUrl").val();
@@ -23,17 +23,41 @@ $(document).ready(function(){
                 Swal.fire({
                     toast: true,
                     position: 'top-end',
-                    timer: 5000,
+                    timer: 3000,
                     showConfirmButton: false,
                     title: 'Success!',
                     text: jsonData.message,
                     type: 'success',
-                })
+                    onClose: secondAlert,
+                });
+                function secondAlert(){
+                    if (jsonData.insertion) {
+                        Swal.fire({
+                            timer: 3000,
+                            showConfirmButton: false,
+                            title: 'Successful Import!',
+                            text: jsonData.insertionMessage,
+                            type: 'success',
+                        })
+                        loadFeeds();
+                    } else {
+                        Swal.fire({
+                            toast: true,
+                            position: 'top-end',
+                            timer: 3000,
+                            showConfirmButton: false,
+                            title: 'Error!',
+                            text: 'Check the log for details.',
+                            type: 'error',
+                        })
+                        console.log(jsonData.insertionMessage);
+                    }
+                }
             }else{
                 Swal.fire({
                     toast: true,
                     position: 'top-end',
-                    timer: 5000,
+                    timer: 3000,
                     showConfirmButton: false,
                     title: 'Error!',
                     text: jsonData.message,
