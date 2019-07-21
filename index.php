@@ -12,7 +12,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.css"><!-- FontAwesome 5.9.0 -->
-    <link rel="stylesheet" href="sweetalert2.min.css"><!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -34,10 +34,15 @@
         </div>
 
     </div>
-    <div class="container">
-        <pre>
-            <?php require 'app/read_rss.php'; ?>
-        </pre>
+    <div id="animator" class="wrapper" style="display: none;">
+        <div class="box-wrap">
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+            <div class="box four"></div>
+            <div class="box five"></div>
+            <div class="box six"></div>
+        </div>
     </div>
 </body>
 <script src="assets/js/jquery-3.4.1.min.js"></script>
