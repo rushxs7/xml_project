@@ -21,7 +21,7 @@
             if($xml->channel->item){
                             echo('<ul>');
                             foreach($xml->channel->item as $item){
-                                echo('<li class="feedItem"><a target="_blank" href="' . $item->link . '">' . $item->title . '</a></li>');
+                                echo('<li class="feedItem"><a target="_blank" href="' . $item->link . '">' . $item->title . '</a>&nbsp;<a target="_blank" href="' . 'https://www.facebook.com/sharer.php?u=' . urlencode($item->link) . '"><i class="fab fa-facebook-square"></i></a><a target="_blank" href="https://twitter.com/intent/tweet?url=' . urlencode($item->link) . '&hashtags=sharedWithRSSProject,PTC">&nbsp;&nbsp;<i class="fab fa-twitter-square"></i></a></li>');
                                 $forcount++;
                                 if($forcount >= $_SESSION['formax']){
                                     break;

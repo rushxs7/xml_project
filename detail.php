@@ -41,7 +41,13 @@
     <div class="container rounded bg-light p-4 mb-3 feed">
         <h5><?php echo($item->title); ?></h5>
         <div class="feedDescription"><?php echo($item->description); ?></div>
-        <a href="<?php echo($item->link); ?>" class="btn btn-primary float-right" target="_blank"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Open Link</a>
+        <div class="float-right">
+            <div class="btn-group">
+                <a href="<?php echo("https://www.facebook.com/sharer.php?u=" . urlencode($item->link)); ?>" class="btn btn-primary" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="<?php echo("https://twitter.com/intent/tweet?url=" . urlencode($item->link) . "&hashtags=sharedWithRSSProject,PTC"); ?>" class="btn btn-primary" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <a href="<?php echo($item->link); ?>" class="btn btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Open Link</a>
+        </div>
         <div class="clearfix"></div>
     </div>
 
