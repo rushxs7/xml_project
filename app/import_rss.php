@@ -38,4 +38,5 @@
 
     echo json_encode($post_data)."\n";
 
+    mysqli_close($connection);
 ?>

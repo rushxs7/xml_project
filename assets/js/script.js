@@ -19,33 +19,33 @@ function deleteSource(id){
     event.preventDefault();
     var sourceid = id;
     if(confirm('Are you sure you want to remove this source?')){
-        $.post("app/delete_source.php", {source: sourceid}, (data)=>{
-            console.log(data);
-            // var jsonResponse = JSON.parse(data);
-            // console.log(jsonResponse);
-            // if(jsonResponse.deletion){
-            //     Swal.fire({
-            //         toast: true,
-            //         position: 'top-end',
-            //         timer: 3000,
-            //         showConfirmButton: false,
-            //         title: 'Deleted!',
-            //         text: jsonResponse.message,
-            //         type: 'success',
-            //     });
-            //     loadFeeds();
-            // }else{
-            //     Swal.fire({
-            //         toast: true,
-            //         position: 'top-end',
-            //         timer: 3000,
-            //         showConfirmButton: false,
-            //         title: 'Error!',
-            //         text: jsonResponse.message,
-            //         type: 'error',
-            //     });
-            // }
-        }, JSON);
+        $.post("app/delete_source.php", { feed:sourceid }, function(data){
+            var jsonData = JSON.parse(data);
+            if(jsonData.deletion){
+                Swal.fire({
+                    toast: true,
+                    position: 'top-end',
+                    timer: 4000,
+                    showConfirmButton: false,
+                    title: 'Success!',
+                    text: jsonData.message,
+                    type: 'success',
+                    onClose: ()=>{
+                        loadFeeds();
+                    }
+                });
+            }else{
+                Swal.fire({
+                    toast: true,
+                    position: 'top-end',
+                    timer: 3000,
+                    showConfirmButton: false,
+                    title: 'Error!',
+                    text: jsonData.message,
+                    type: 'error',
+                });
+            }
+        });
         // console.log(sourceId);
     }else{
         // console.log('pressed cancel');

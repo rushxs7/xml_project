@@ -49,4 +49,6 @@
             </div>');
     }
 
+    mysqli_close($connection);
+
 ?>
