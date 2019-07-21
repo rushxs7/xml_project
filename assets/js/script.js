@@ -1,10 +1,12 @@
 function loadFeeds(){
     $("#feedContainer").empty();
     $("#animator").show();
+    $("#reloadButton i").addClass("fa-spin");
     $.get("resources/modules/feed_cards.php", function (data, status) {
         $("#feedContainer").html(data);
         console.log("Get data from feed_cards.php. Status: " + status);
     }).done(function(){
+        $("#reloadButton i").removeClass("fa-spin");
         $("#animator").fadeOut(500, function(){
             $(this).hide();
         });

@@ -20,6 +20,12 @@
                         <a class="nav-link" href="#">What is RSS?</a>
                     </li>
                 </ul>
+                <div class="d-inline ml-auto">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button id="reloadButton" onclick="loadFeeds()" type="button" class="btn btn-outline-primary"><i class="fas fa-sync"></i></button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-list-ol"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
