@@ -9,3 +9,24 @@
     width: 100%;
     height: auto;
 }
+
+#detailImage{
+    max-width: 10em;
+    min-width: 3em;
+}
+
+.feed .feedDescription h1,
+.feed .feedDescription h2,
+.feed .feedDescription h3,
+.feed .feedDescription h4,
+.feed .feedDescription h5,
+.feed .feedDescription h6
+{
+    font-size: 1em;
+}
+.feed .feedDescription img{
+    max-width: 10em;
+    max-height: auto;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
