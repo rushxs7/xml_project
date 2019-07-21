@@ -15,6 +15,44 @@ function loadFeeds(){
     setInterval(loadFeeds, 600 * 1000);
 }
 
+function deleteSource(id){
+    event.preventDefault();
+    var sourceid = id;
+    if(confirm('Are you sure you want to remove this source?')){
+        $.post("app/delete_source.php", {source: sourceid}, (data)=>{
+            console.log(data);
+            // var jsonResponse = JSON.parse(data);
+            // console.log(jsonResponse);
+            // if(jsonResponse.deletion){
+            //     Swal.fire({
+            //         toast: true,
+            //         position: 'top-end',
+            //         timer: 3000,
+            //         showConfirmButton: false,
+            //         title: 'Deleted!',
+            //         text: jsonResponse.message,
+            //         type: 'success',
+            //     });
+            //     loadFeeds();
+            // }else{
+            //     Swal.fire({
+            //         toast: true,
+            //         position: 'top-end',
+            //         timer: 3000,
+            //         showConfirmButton: false,
+            //         title: 'Error!',
+            //         text: jsonResponse.message,
+            //         type: 'error',
+            //     });
+            // }
+        }, JSON);
+        // console.log(sourceId);
+    }else{
+        // console.log('pressed cancel');
+        return false;
+    }
+}
+
 $(document).ready(function(){
     
     loadFeeds();

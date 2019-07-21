@@ -12,7 +12,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.css"><!-- FontAwesome 5.9.0 -->
-    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/loader.css"><!-- Loader Animation CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>

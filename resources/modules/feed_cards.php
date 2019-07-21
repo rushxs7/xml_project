@@ -11,7 +11,7 @@
             echo('<div class="col-12">
                     <div class="card border-secondary mb-4 shadow">
                         <div class="card-header"><a href="' . $feed['link'] . '" target="_blank">'. $feed['title'] . '</a>
-                        <a class="close" href="delete.php?id=' . $feed['id'] . '"><i class="fas fa-trash"></i></a>
+                        <button class="close" onclick="deleteSource(' . $feed['id'] . ')"><i class="fas fa-trash text-dark"></i></button>
                         </div>
                         <div class="card-body">
                             <p class="card-text">');
