@@ -3,14 +3,16 @@
     require '../../config/database.php';
     require '../../config/session.php';
 
-    $query = "select * from feeds order by created_at;";
+    $query = "select * from feeds order by created_at desc;";
     $result = mysqli_query($connection, $query);
 
     if (mysqli_num_rows($result) > 0){
         while($feed = mysqli_fetch_assoc($result)){
             echo('<div class="col-12">
                     <div class="card border-primary mb-4 shadow">
-                        <div class="card-header"><a href="' . $feed['link'] . '" target="_blank">'. $feed['title'] . '</a></div>
+                        <div class="card-header"><a href="' . $feed['link'] . '" target="_blank">'. $feed['title'] . '</a>
+                        <a class="close" href="delete.php?id=' . $feed['id'] . '"><i class="fas fa-trash"></i></a>
+                        </div>
                         <div class="card-body">
                             <p class="card-text">');
 
