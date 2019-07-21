@@ -12,12 +12,12 @@ function loadFeeds(){
         });
         $("animator").fadeIn(200);
     });
+    setInterval(loadFeeds, 600 * 1000);
 }
 
 $(document).ready(function(){
     
     loadFeeds();
-    setInterval(loadFeeds, 300000);
 
     $("#importButton").click(function(event){
         $("#importIcon").hide();
