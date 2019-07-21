@@ -7,7 +7,7 @@
     $urlPost = str_replace( '\/', '/', $urlPost);
     $validation = validateFeed($urlPost);
     if($validation){
-        $message = 'You have imported a valid RSS-link!';
+        $message = 'You have entered a valid RSS-link.';
         $xml = simplexml_load_file($urlPost);
         $title = $xml->channel->title;
         $link = $xml->channel->link;
