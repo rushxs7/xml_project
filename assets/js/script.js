@@ -105,7 +105,7 @@ $(document).ready(function(){
                 Swal.fire({
                     toast: true,
                     position: 'top-end',
-                    timer: 3000,
+                    timer: 4000,
                     showConfirmButton: false,
                     title: 'Error!',
                     text: jsonData.message,
