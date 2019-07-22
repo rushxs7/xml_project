@@ -1,8 +1,8 @@
 <?php
 
 // INSERT MYSQL CREDENTIALS HERE
-$host = '192.168.1.69';
-$username = 'xml_user';
+$host = '127.0.0.1';
+$username = 'xmluser';
 $password = 'xml123';
 $database = 'xml_project';
 
