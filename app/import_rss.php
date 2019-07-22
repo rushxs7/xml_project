@@ -27,7 +27,7 @@
             $insertionMessage = "Import failed! " . mysqli_error($connection);
         }
     }else{
-        $message = 'You have imported an invalid link. Please try again!';
+        $message = 'The feed does not validate to W3 validation standards';
     }
     $post_data = array(
         'validation'=>$validation,
