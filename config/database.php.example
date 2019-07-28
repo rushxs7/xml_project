@@ -1,0 +1,15 @@
+<?php
+
+// CONFIGURE THE CREDENTIALS TO YOUR MYSQL-SERVER AND DATABASE
+
+$host = '127.0.0.1';
+$username = 'database_user';
+$password = 'database_password';
+$database = 'database_name';
+$connection = mysqli_connect($host, $username, $password, $database);
+
+if(!$connection){
+    die("Connection failed: " . mysqli_connect_error($connection));
+}
+
+?>
