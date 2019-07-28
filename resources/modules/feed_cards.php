@@ -32,7 +32,7 @@
                     echo('<a class="btn btn-sm btn-outline-dark float-right" href="detail.php?id=' . $feed['id'] . '">Read more...</a>');
                 }
             }else{
-                            echo('No feeds to display');
+                            echo('This source doesn\'t have any feeds. How boring...');
             }
             
             echo('          </p>
