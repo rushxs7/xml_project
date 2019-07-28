@@ -28,9 +28,8 @@
                                 }
                             }
                             echo('</ul>');
-                if(count($xml->channel->item) > $_SESSION['formax']){
-                    echo('<a class="btn btn-sm btn-outline-dark float-right" href="detail.php?id=' . $feed['id'] . '">Read more...</a>');
-                }
+                        echo('<a class="btn btn-sm btn-outline-dark float-right" href="detail.php?id=' . $feed['id'] . '">Read more...</a>');
+                
             }else{
                             echo('This source doesn\'t have any feeds. How boring...');
             }
