@@ -39,6 +39,11 @@
                             <label for="feedAmt">Amount of feeds to show per source: </label>
                             <input type="number" name="feedAmt" id="feedAmt" class="form-control form-control-sm" min="1" max="50" step="1" value="<?php echo($_SESSION['formax']); ?>">
                         </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="rememberAmount" name="rememberAmount" value="true">
+                            <label class="custom-control-label" for="rememberAmount">Remember Amount</label>
+                        </div>
+                        <hr class="my-2">
                         <button type="submit" class="btn btn-block btn-sm btn-primary">Save</button>
                     </form>
                 </div>
