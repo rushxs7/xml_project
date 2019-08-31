@@ -1,9 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<<<<<<< HEAD
     <div class="container">
         <a class="navbar-brand" href="#">RSS Project</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+=======
+        <div class="container">
+            <a class="navbar-brand" href="">RSS Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+>>>>>>> a30c6d99e6eb8b5d9c5496de8b2f8c76d9141f1f
 
         <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav mr-auto">
