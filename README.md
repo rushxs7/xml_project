@@ -28,4 +28,4 @@ Inside the subfolder, there is a config folder. There is a "*database.php.exampl
 
 Now, if you enter "localhost/**subfolder_name**" in the url-bar, the application should launch.
 
-Installation Guide is also available through a video provided in the root folder of the project.
+Installation Guide is also available through [a video](https://github.com/rushxs7/xml_project/blob/master/Installation%20Guide.mp4) provided in the root folder of the project.
