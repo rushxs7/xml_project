@@ -27,3 +27,5 @@ After we have done this, copy the contents of the *xml_project zip/repository* a
 Inside the subfolder, there is a config folder. There is a "*database.php.example*" file inside. Edit the credentials inside the file to make the application connect to your MySQL database. Save this file as *database.php* inside the *config* folder.
 
 Now, if you enter "localhost/**subfolder_name**" in the url-bar, the application should launch.
+
+Installation Guide is also available through a video provided in the root folder of the project.
